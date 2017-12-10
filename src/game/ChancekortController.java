@@ -10,7 +10,7 @@ public class ChancekortController {
 	
 	private Chancekort[] chancekortController = new Chancekort[7];
 	
-	public void opretChancekort() { //opretter chancekort arrayet
+	public void opretChancekort() { //opretter chancekort arrayet (String tekst, int beløb, int felt, int value)
 		chancekortController[0] = new Chancekort("Ryk frem til Start og modtag 2 kroner", 2, 0, 1);
 		chancekortController[1] = new Chancekort("Ryk 5 felter frem", 0, 5, 2);
 		chancekortController[2] = new Chancekort("Ryk et felt frem", 0, 1, 3);

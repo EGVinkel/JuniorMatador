@@ -11,7 +11,7 @@ import gui_fields.GUI_Street;
 
 public class Board {
 	
-	GUI_Field[] fields = new GUI_Field[24];
+	final GUI_Field[] fields = new GUI_Field[24];
 
 	
 	

@@ -13,11 +13,11 @@ public class GUIController {
 	
 
 
-	public GUIController(GUI_Field[] gui_Fields) { //opretter GUIController konstruktøren med BraetController som parameter.
+	public GUIController(GUI_Field[] gui_Fields) { //opretter GUIController konstruktøren med et gui_Fields som parameter.
 		this.gui = new GUI(gui_Fields);
 	}
 	
-	public int setDice(TerningController terning) { //kasterne terning og returnere værdien.
+	public int setDice(TerningController terning) { //kasterne terning og returnere værdien. med et terning objekt som parameter
 		gui.getUserButtonPressed("Kast Terning", "Kast");
 		terning.kastTerning();
 		gui.setDie(terning.getTerning());
@@ -35,10 +35,10 @@ public class GUIController {
 	}
 	
 	
-	public void setBilTrue(int placering, int spiller,Board braetController) { //Sætter en bil på brættet
+	public void setBilTrue(int placering, int spiller,Board braetController) { //Sætter en bil på brættet (parameter, objekt af board)
 		braetController.getFelt(placering).setCar(guiPlayers[spiller], true);
 	}
-	public void setBilFalse(int placering, int spiller, Board braetController) { //fjerner en bil fra brættet
+	public void setBilFalse(int placering, int spiller, Board braetController) { //fjerner en bil fra brættet (parameter, objekt af board)
 		braetController.getFelt(placering).setCar(guiPlayers[spiller], false);
 	}
 	

@@ -11,7 +11,7 @@ public class SpilController {
 	private NySpiller[] spillere;
 	
 	private TerningController terning =new TerningController();
-	private ChancekortController chancekort = new ChancekortController();
+	private ChancekortController chancekortControl = new ChancekortController();
 	private Board braetController = new Board();
 
 	public void playGame() { //opsamler metoder og objekter i en enkelt metode, som derefter kan kaldes i main.
@@ -90,7 +90,7 @@ public class SpilController {
 			this.spillere[i] = new NySpiller(navn, startKapital, STARTFELT);
 		}
 		guiController.addPlayers(spillere,braetController); //tilføjer spillerne til gui'en
-		chancekort.opretChancekort(); //opretter chancekortene
+		chancekortControl.opretChancekort(); //opretter chancekortene
 	}
 
 	private void konsekvensAfFelter(int i) { //finder konsekvensen af et vilkårligt felt
@@ -175,29 +175,66 @@ public class SpilController {
 	}
 
 	private void landOnChancekort(int i) { //konsekvenser for at lande på et chancekort
-
-		Chancekort chancekortet = chancekort.getChancekort();
-		landOnField(i, chancekortet.getBeløb());
+         
+		Chancekort chancekortet = chancekortControl.getChancekort();
+		
 		guiController.setBilFalse(spillere[i].getPlacering(), i, braetController);
 		
-		if (chancekortet.getValue() == 2 || chancekortet.getValue() == 1 || chancekortet.getValue() == 5) { //speciel for 2 specifikke chancekort, da placering opdateres på anderledes måde end de andre
-			if(chancekortet.getValue() == 2 && spillere[i].getPlacering() == 21) { //hvis spilleren står på sidste chancekort OG skal rykke 5 felter frem, så startes runde forfra.
-				spillere[i].setPlacering(spillere[i].getPlacering()-24); //en ny runde startes
-				passerStart(i);
-			}
+		switch (chancekortet.getValue()) {
+		case 1:   //ryk til start
 			spillere[i].setPlacering(chancekortet.getFelt()); 
-		}
-		else {
-			spillere[i].setPlacering(spillere[i].getPlacering() + chancekortet.getFelt());
-		}
-		if (chancekortet.getValue() == 2 || chancekortet.getValue() == 3) { 
+			guiController.setBilTrue(spillere[i].getPlacering(), i, braetController);
+			guiController.showMessage(chancekortet.getTekst());
+			passerStart(i);
+			break;
+		case 2:   // ryk 5 felter frem. speciel da boardet ender ved 24. Hvis man står på felt 21 (chance) skal man således rykkes 2 felter forbi start
+			if(spillere[i].getPlacering() == 21){ 
+			spillere[i].setPlacering(spillere[i].getPlacering()-19); 
+			guiController.setBilTrue(spillere[i].getPlacering(), i, braetController);
+			guiController.showMessage(chancekortet.getTekst());	
+			passerStart(i);
 			konsekvensAfFelter(i);
+			}
+			else {
+			spillere[i].setPlacering(spillere[i].getPlacering()+chancekortet.getFelt()); 
+			guiController.setBilTrue(spillere[i].getPlacering(), i, braetController);
+			guiController.showMessage(chancekortet.getTekst());	
+			konsekvensAfFelter(i);
+			}
+			break;
+		case 3:
+			spillere[i].setPlacering(spillere[i].getPlacering()+chancekortet.getFelt()); 
+			guiController.setBilTrue(spillere[i].getPlacering(), i, braetController);
+			guiController.showMessage(chancekortet.getTekst());	
+			konsekvensAfFelter(i);
+			break;
+		case 4:
+			guiController.setBilTrue(spillere[i].getPlacering(), i, braetController);
+			guiController.showMessage(chancekortet.getTekst());	
+			spillere[i].getKonto().setKapital(spillere[i].getKonto().getKapital()+chancekortet.getBeløb());
+			break;
+		case 5:
+			spillere[i].setPlacering(chancekortet.getFelt());            //strand promenaden
+			guiController.setBilTrue(spillere[i].getPlacering(), i, braetController);
+			guiController.showMessage(chancekortet.getTekst());
+			spillere[i].getKonto().setKapital(spillere[i].getKonto().getKapital() +chancekortet.getBeløb());
+			break;
+		case 6:
+			guiController.setBilTrue(spillere[i].getPlacering(), i, braetController);
+			guiController.showMessage(chancekortet.getTekst());	
+			spillere[i].getKonto().setKapital(spillere[i].getKonto().getKapital()+chancekortet.getBeløb());
+			break;
+		case 7:
+			guiController.setBilTrue(spillere[i].getPlacering(), i, braetController);
+			guiController.showMessage(chancekortet.getTekst());	
+			spillere[i].getKonto().setKapital(spillere[i].getKonto().getKapital()+chancekortet.getBeløb());
+			break;}
+		
+		
 		}
+		
+		
 
-		guiController.setBilTrue(spillere[i].getPlacering(), i, braetController);
-		guiController.showMessage(chancekortet.getTekst());
-	}
-	
 
 	private void landOnField(int i, int nyBalance) { //opdaterer blance for at lande på et "normalt" felt.
 		spillere[i].getKonto().setKapital(spillere[i].getKonto().getKapital() + nyBalance);
