@@ -208,22 +208,14 @@ public class SpilController {
 			guiController.showMessage(chancekortet.getTekst());	
 			konsekvensAfFelter(i);
 			break;
-		case 4:
-			guiController.setBilTrue(spillere[i].getPlacering(), i, braetController);
-			guiController.showMessage(chancekortet.getTekst());	
-			spillere[i].getKonto().setKapital(spillere[i].getKonto().getKapital()+chancekortet.getBeløb());
-			break;
 		case 5:
 			spillere[i].setPlacering(chancekortet.getFelt());            //strand promenaden
 			guiController.setBilTrue(spillere[i].getPlacering(), i, braetController);
 			guiController.showMessage(chancekortet.getTekst());
 			spillere[i].getKonto().setKapital(spillere[i].getKonto().getKapital() +chancekortet.getBeløb());
 			break;
+		case 4:
 		case 6:
-			guiController.setBilTrue(spillere[i].getPlacering(), i, braetController);
-			guiController.showMessage(chancekortet.getTekst());	
-			spillere[i].getKonto().setKapital(spillere[i].getKonto().getKapital()+chancekortet.getBeløb());
-			break;
 		case 7:
 			guiController.setBilTrue(spillere[i].getPlacering(), i, braetController);
 			guiController.showMessage(chancekortet.getTekst());	
