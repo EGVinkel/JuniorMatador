@@ -27,9 +27,9 @@ public class SpilController {
 
 				guiController.setBilFalse(spillere[i].getPlacering(), i, braetController); //fjerner nuværende bil fra brættet
 
-				if (spillere[i].getPlacering() + faceValue > 23) { //i tilfælde af at arrayets størrelse overskrides, startes en ny runde. (passerer start)
+				if (spillere[i].getPlacering() + faceValue > 39) { //i tilfælde af at arrayets størrelse overskrides, startes en ny runde. (passerer start)
 					passerStart(i);
-					spillere[i].setPlacering(spillere[i].getPlacering() + faceValue - 24);
+					spillere[i].setPlacering(spillere[i].getPlacering() + faceValue - 40);
 
 				} else {
 					spillere[i].setPlacering(spillere[i].getPlacering() + faceValue);
@@ -168,7 +168,52 @@ public class SpilController {
 		case 23:
 			landOnField(i, -5);
 			break;
-		case 24:
+		case 25:
+			landOnField(i, -5);
+			break;
+		case 26:
+			landOnField(i, -5);
+			break;
+		case 27:
+			landOnField(i, -5);
+			break;
+		case 28:
+			landOnField(i, -5);
+			break;
+		case 29:
+			landOnField(i, -5);
+			break;
+		case 30:
+			landOnField(i, -5);
+			break;
+		case 31:
+			landOnField(i, -5);
+			break;
+		case 32:
+			landOnField(i, -5);
+			break;
+		case 33:
+			landOnField(i, -5);
+			break;
+		case 34:
+			landOnField(i, -5);
+			break;
+		case 35:
+			landOnField(i, -5);
+			break;
+		case 36:
+			landOnField(i, -5);
+			break;
+		case 37:
+			landOnField(i, -5);
+			break;
+		case 38:
+			landOnField(i, -5);
+			break;
+		case 39:
+			landOnField(i, -5);
+			break;
+		case 40:
 			landOnField(i, -5);
 			break;
 		}

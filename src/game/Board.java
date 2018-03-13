@@ -11,7 +11,7 @@ import gui_fields.GUI_Street;
 
 public class Board {
 	
-	final GUI_Field[] fields = new GUI_Field[24];
+	final GUI_Field[] fields = new GUI_Field[40];
 
 	
 	
@@ -56,6 +56,23 @@ public class Board {
 		fields[21] = new GUI_Chance("?", "Chance", "Prøv Lykken", Color.WHITE, Color.BLACK);
 		fields[22] = new GUI_Street("Vandlandet", " Pris: 5 kr", "Vandlandet", "", Vand, Color.WHITE);
 		fields[23] = new GUI_Street("Strandpromenaden", " Pris: 5 kr", " Strandpromenaden", "", Vand, Color.WHITE);
+		fields[24] = new GUI_Street("Strandpromenaden", " Pris: 5 kr", " Strandpromenaden", "", Vand, Color.WHITE);
+		fields[25] = new GUI_Street("Strandpromenaden", " Pris: 5 kr", " Strandpromenaden", "", Vand, Color.WHITE);
+		fields[26] = new GUI_Street("Strandpromenaden", " Pris: 5 kr", " Strandpromenaden", "", Vand, Color.WHITE);
+		fields[27] = new GUI_Street("Strandpromenaden", " Pris: 5 kr", " Strandpromenaden", "", Vand, Color.WHITE);
+		fields[28] = new GUI_Street("Strandpromenaden", " Pris: 5 kr", " Strandpromenaden", "", Vand, Color.WHITE);
+		fields[29] = new GUI_Street("Strandpromenaden", " Pris: 5 kr", " Strandpromenaden", "", Vand, Color.WHITE);
+		fields[30] = new GUI_Street("Strandpromenaden", " Pris: 5 kr", " Strandpromenaden", "", Vand, Color.WHITE);
+		fields[31] = new GUI_Street("Strandpromenaden", " Pris: 5 kr", " Strandpromenaden", "", Vand, Color.WHITE);
+		fields[32] = new GUI_Street("Strandpromenaden", " Pris: 5 kr", " Strandpromenaden", "", Vand, Color.WHITE);
+		fields[33] = new GUI_Street("Strandpromenaden", " Pris: 5 kr", " Strandpromenaden", "", Vand, Color.WHITE);
+		fields[34] = new GUI_Street("Strandpromenaden", " Pris: 5 kr", " Strandpromenaden", "", Vand, Color.WHITE);
+		fields[35] = new GUI_Street("Strandpromenaden", " Pris: 5 kr", " Strandpromenaden", "", Vand, Color.WHITE);
+		fields[36] = new GUI_Street("Strandpromenaden", " Pris: 5 kr", " Strandpromenaden", "", Vand, Color.WHITE);
+		fields[37] = new GUI_Street("Strandpromenaden", " Pris: 5 kr", " Strandpromenaden", "", Vand, Color.WHITE);
+		fields[38] = new GUI_Street("Strandpromenaden", " Pris: 5 kr", " Strandpromenaden", "", Vand, Color.WHITE);
+		fields[39] = new GUI_Street("Strandpromenaden", " Pris: 5 kr", " Strandpromenaden", "", Vand, Color.WHITE);
+		
 		return fields;
 		}
 	public GUI_Field getFelt(int i) { //henter et felt fra fields arrayet

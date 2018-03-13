@@ -15,9 +15,7 @@ public class TerningController {
 
 	}
 
-	public TerningController(int terning) {
-		this.terning = terning;
-	}
+	
 
 	public void kastTerning() {
 		terning = random.nextInt(6) + 1;

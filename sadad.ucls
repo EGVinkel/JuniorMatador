@@ -1,9 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<class-diagram version="1.2.2" icons="true" always-add-relationships="false" generalizations="true" realizations="true" 
-  associations="true" dependencies="true" nesting-relationships="true" router="FAN">  
+<class-diagram version="1.2.2" icons="true" automaticImage="JPEG" always-add-relationships="false" 
+  generalizations="true" realizations="true" associations="true" dependencies="false" nesting-relationships="true" 
+  router="FAN">  
   <class id="1" language="java" name="game.Main" project="JuniorMatador" file="/JuniorMatador/src/game/Main.java" 
     binary="false" corner="BOTTOM_RIGHT">    
-    <position height="-1" width="-1" x="149" y="57"/>    
+    <position height="99" width="113" x="220" y="46"/>    
     <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
       sort-features="false" accessors="true" visibility="true">      
       <attributes public="true" package="true" protected="true" private="true" static="true"/>      
@@ -12,7 +13,7 @@
   </class>  
   <class id="2" language="java" name="game.ChancekortController" project="JuniorMatador" 
     file="/JuniorMatador/src/game/ChancekortController.java" binary="false" corner="BOTTOM_RIGHT">    
-    <position height="-1" width="-1" x="141" y="220"/>    
+    <position height="117" width="162" x="114" y="365"/>    
     <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
       sort-features="false" accessors="true" visibility="true">      
       <attributes public="true" package="true" protected="true" private="true" static="true"/>      
@@ -21,7 +22,7 @@
   </class>  
   <class id="3" language="java" name="game.TerningController" project="JuniorMatador" 
     file="/JuniorMatador/src/game/TerningController.java" binary="false" corner="BOTTOM_RIGHT">    
-    <position height="-1" width="-1" x="711" y="585"/>    
+    <position height="153" width="122" x="316" y="365"/>    
     <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
       sort-features="false" accessors="true" visibility="true">      
       <attributes public="true" package="true" protected="true" private="true" static="true"/>      
@@ -30,7 +31,7 @@
   </class>  
   <class id="4" language="java" name="game.Board" project="JuniorMatador" file="/JuniorMatador/src/game/Board.java" 
     binary="false" corner="BOTTOM_RIGHT">    
-    <position height="-1" width="-1" x="486" y="516"/>    
+    <position height="135" width="139" x="478" y="365"/>    
     <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
       sort-features="false" accessors="true" visibility="true">      
       <attributes public="true" package="true" protected="true" private="true" static="true"/>      
@@ -39,7 +40,7 @@
   </class>  
   <class id="5" language="java" name="game.Konto" project="JuniorMatador" file="/JuniorMatador/src/game/Konto.java" 
     binary="false" corner="BOTTOM_RIGHT">    
-    <position height="-1" width="-1" x="284" y="733"/>    
+    <position height="135" width="115" x="657" y="684"/>    
     <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
       sort-features="false" accessors="true" visibility="true">      
       <attributes public="true" package="true" protected="true" private="true" static="true"/>      
@@ -48,7 +49,7 @@
   </class>  
   <class id="6" language="java" name="game.SpilController" project="JuniorMatador" 
     file="/JuniorMatador/src/game/SpilController.java" binary="false" corner="BOTTOM_RIGHT">    
-    <position height="-1" width="-1" x="444" y="147"/>    
+    <position height="279" width="165" x="478" y="46"/>    
     <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
       sort-features="false" accessors="true" visibility="true">      
       <attributes public="true" package="true" protected="true" private="true" static="true"/>      
@@ -57,7 +58,7 @@
   </class>  
   <class id="7" language="java" name="game.Chancekort" project="JuniorMatador" 
     file="/JuniorMatador/src/game/Chancekort.java" binary="false" corner="BOTTOM_RIGHT">    
-    <position height="-1" width="-1" x="138" y="476"/>    
+    <position height="225" width="159" x="114" y="684"/>    
     <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
       sort-features="false" accessors="true" visibility="true">      
       <attributes public="true" package="true" protected="true" private="true" static="true"/>      
@@ -66,7 +67,7 @@
   </class>  
   <class id="8" language="java" name="game.GUIController" project="JuniorMatador" 
     file="/JuniorMatador/src/game/GUIController.java" binary="false" corner="BOTTOM_RIGHT">    
-    <position height="-1" width="-1" x="802" y="144"/>    
+    <position height="279" width="197" x="829" y="365"/>    
     <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
       sort-features="false" accessors="true" visibility="true">      
       <attributes public="true" package="true" protected="true" private="true" static="true"/>      
@@ -75,103 +76,67 @@
   </class>  
   <class id="9" language="java" name="game.NySpiller" project="JuniorMatador" 
     file="/JuniorMatador/src/game/NySpiller.java" binary="false" corner="BOTTOM_RIGHT">    
-    <position height="-1" width="-1" x="299" y="508"/>    
+    <position height="225" width="132" x="657" y="365"/>    
     <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
       sort-features="false" accessors="true" visibility="true">      
       <attributes public="true" package="true" protected="true" private="true" static="true"/>      
       <operations public="true" package="true" protected="true" private="true" static="true"/>    
     </display>  
   </class>  
-  <dependency id="10">    
-    <end type="SOURCE" refId="8"/>    
-    <end type="TARGET" refId="9"/>  
-  </dependency>  
-  <association id="11">    
-    <end type="SOURCE" refId="6" navigable="false" variant="ASSOCIATION">      
-      <attribute id="12" name="braetController"/>      
-      <multiplicity id="13" minimum="0" maximum="1"/>    
+  <association id="10">    
+    <end type="SOURCE" refId="6" navigable="false">      
+      <attribute id="11" name="braetController"/>      
+      <multiplicity id="12" minimum="0" maximum="1"/>    
     </end>    
-    <end type="TARGET" refId="4" navigable="true" variant="ASSOCIATION"/>    
+    <end type="TARGET" refId="4" navigable="true"/>    
     <display labels="true" multiplicity="true"/>  
   </association>  
-  <association id="14">    
-    <bendpoint x="301" y="344"/>    
-    <end type="SOURCE" refId="6" navigable="false" variant="ASSOCIATION">      
-      <attribute id="15" name="spillere"/>      
-      <multiplicity id="16" minimum="0" maximum="2147483647"/>    
+  <association id="13">    
+    <end type="SOURCE" refId="6" navigable="false">      
+      <attribute id="14" name="terning"/>      
+      <multiplicity id="15" minimum="0" maximum="1"/>    
     </end>    
-    <end type="TARGET" refId="9" navigable="true" variant="ASSOCIATION"/>    
+    <end type="TARGET" refId="3" navigable="true"/>    
     <display labels="true" multiplicity="true"/>  
   </association>  
-  <dependency id="17">    
-    <bendpoint x="393" y="289"/>    
-    <bendpoint x="394" y="341"/>    
-    <bendpoint x="391" y="525"/>    
-    <bendpoint x="396" y="778"/>    
-    <bendpoint x="331" y="780"/>    
-    <end type="SOURCE" refId="6"/>    
-    <end type="TARGET" refId="5"/>  
-  </dependency>  
-  <dependency id="18">    
-    <end type="SOURCE" refId="8"/>    
-    <end type="TARGET" refId="3"/>  
-  </dependency>  
-  <dependency id="19">    
-    <end type="SOURCE" refId="6"/>    
-    <end type="TARGET" refId="7"/>  
-  </dependency>  
-  <association id="20">    
-    <end type="SOURCE" refId="6" navigable="false" variant="ASSOCIATION">      
-      <attribute id="21" name="chancekortControl"/>      
-      <multiplicity id="22" minimum="0" maximum="1"/>    
+  <association id="16">    
+    <end type="SOURCE" refId="9" navigable="false">      
+      <attribute id="17" name="konto"/>      
+      <multiplicity id="18" minimum="0" maximum="1"/>    
     </end>    
-    <end type="TARGET" refId="2" navigable="true" variant="ASSOCIATION"/>    
+    <end type="TARGET" refId="5" navigable="true"/>    
     <display labels="true" multiplicity="true"/>  
   </association>  
-  <association id="23">    
-    <bendpoint x="650" y="461"/>    
-    <end type="SOURCE" refId="6" navigable="false" variant="ASSOCIATION">      
-      <attribute id="24" name="terning"/>      
-      <multiplicity id="25" minimum="0" maximum="1"/>    
+  <association id="19">    
+    <end type="SOURCE" refId="6" navigable="false">      
+      <attribute id="20" name="spillere"/>      
+      <multiplicity id="21" minimum="0" maximum="2147483647"/>    
     </end>    
-    <end type="TARGET" refId="3" navigable="true" variant="ASSOCIATION"/>    
+    <end type="TARGET" refId="9" navigable="true"/>    
     <display labels="true" multiplicity="true"/>  
   </association>  
-  <dependency id="26">    
-    <end type="SOURCE" refId="8"/>    
-    <end type="TARGET" refId="4"/>  
-  </dependency>  
-  <dependency id="27">    
-    <end type="SOURCE" refId="1"/>    
-    <end type="TARGET" refId="6"/>  
-  </dependency>  
+  <association id="22">    
+    <end type="SOURCE" refId="6" navigable="false">      
+      <attribute id="23" name="guiController"/>      
+      <multiplicity id="24" minimum="0" maximum="1"/>    
+    </end>    
+    <end type="TARGET" refId="8" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <association id="25">    
+    <end type="SOURCE" refId="6" navigable="false">      
+      <attribute id="26" name="chancekortControl"/>      
+      <multiplicity id="27" minimum="0" maximum="1"/>    
+    </end>    
+    <end type="TARGET" refId="2" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
   <association id="28">    
-    <end type="SOURCE" refId="6" navigable="false" variant="ASSOCIATION">      
-      <attribute id="29" name="guiController"/>      
-      <multiplicity id="30" minimum="0" maximum="1"/>    
+    <end type="SOURCE" refId="2" navigable="false">      
+      <attribute id="29" name="chancekortController"/>      
+      <multiplicity id="30" minimum="0" maximum="2147483647"/>    
     </end>    
-    <end type="TARGET" refId="8" navigable="true" variant="ASSOCIATION"/>    
-    <display labels="true" multiplicity="true"/>  
-  </association>  
-  <dependency id="31">    
-    <bendpoint x="804" y="734"/>    
-    <end type="SOURCE" refId="8"/>    
-    <end type="TARGET" refId="5"/>  
-  </dependency>  
-  <association id="32">    
-    <end type="SOURCE" refId="2" navigable="false" variant="ASSOCIATION">      
-      <attribute id="33" name="chancekortController"/>      
-      <multiplicity id="34" minimum="0" maximum="2147483647"/>    
-    </end>    
-    <end type="TARGET" refId="7" navigable="true" variant="ASSOCIATION"/>    
-    <display labels="true" multiplicity="true"/>  
-  </association>  
-  <association id="35">    
-    <end type="SOURCE" refId="9" navigable="false" variant="ASSOCIATION">      
-      <attribute id="36" name="konto"/>      
-      <multiplicity id="37" minimum="0" maximum="1"/>    
-    </end>    
-    <end type="TARGET" refId="5" navigable="true" variant="ASSOCIATION"/>    
+    <end type="TARGET" refId="7" navigable="true"/>    
     <display labels="true" multiplicity="true"/>  
   </association>  
   <classifier-display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 

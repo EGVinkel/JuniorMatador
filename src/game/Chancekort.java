@@ -16,31 +16,23 @@ public class Chancekort {
 		return tekst;
 	}
 	
-	public void setTekst(String tekst) {
-		this.tekst = tekst;
-	}
+
 
 	public int getBeløb() {
 		return beløb;
 	}
 
-	public void setBeløb(int beløb) {
-		this.beløb = beløb;
-	}
+
 
 	public int getFelt() {
 		return felt;
 	}
 
-	public void setFelt(int felt) {
-		this.felt = felt;
-	}
+	
 
 	public int getValue() {
 		return value;
 	}
 
-	public void setValue(int value) {
-		this.value = value;
-	}
+	
 }
