@@ -9,17 +9,17 @@ public class ConnectionToDB {
 	private static String dbPassword = "mke56bxq";
 
 	public Connection dbConnect() {
-
+		Connection connection = null;
 		try {
 			Class.forName("com.mysql.jdbc.Driver");
-			Connection connection = DriverManager.getConnection(dbUrl, dbUsername, dbPassword);
+			connection = DriverManager.getConnection(dbUrl, dbUsername, dbPassword);
 			return connection;
 		} catch (SQLException e) {
 			System.err.print(e.getMessage() + " Noob - ingen sql bandit at hente her!");
 		} catch (Exception e) {
 			System.err.print(e.getMessage() + " Noob - nu er du bare en meget grim og dum abe :-)");
 		}
-		return null;
+		return connection;
 	}
 
 }
