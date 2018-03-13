@@ -6,7 +6,7 @@ public class ConnectionToDB {
 
 	private static String dbUrl = "jdbc:mysql://localhost:3306/Matador";
 	private static String dbUsername = "root";
-	private static String dbPassword = "mke56bxq";
+	private static String dbPassword = "gruppe25";
 
 	public Connection dbConnect() {
 		Connection connection = null;
